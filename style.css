@@ -1,0 +1,258 @@
+/*GLOBAL*/
+
+* {
+    margin: 0;
+    padding: 0; 
+    list-style: none; 
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*********/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    height: 48px;
+    margin: 5px 5px 115px 5px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 230px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+} 
+
+header ul li a {
+    color: black;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+header ul svg {
+    width: 24px;
+    fill: #5f6368;
+}
+
+header ul #botoncitos {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+header ul #botoncitos:hover {
+    border-radius: 100%;
+    background-color: rgb(239 240 240);
+    opacity: 1;
+}
+
+header ul #imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+header ul #imagen:hover {
+    border-radius: 100%;
+    background-color: rgb(239 240 240);
+}
+
+header ul #imagen img {
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+}
+
+#imgoogle {
+    display: flex;
+    justify-content: center;
+}
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+#nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    border: #dfe1e5 solid 1px;
+    width: 582px;
+    height: 44px;
+    border-radius: 20px;
+    line-height: 22px;
+    padding: 5px;
+}
+
+#nav:hover {
+    border: 1px solid;
+    box-shadow: 1px 1px 2px 1px #888888; 
+}
+
+#nav svg {
+    width: 20px;
+    margin: 0 7px;
+    fill: #9aa0a6;
+}
+
+#nav form input {
+    width: 90%;
+    position: absolute;
+    height: 29px; 
+    border: none;
+    font-size: 16px;
+}
+
+#nav form input:focus {
+    outline: none;
+}
+
+#centro #botones {
+    display: flex;
+    justify-content: center;
+    width: 584px;
+    margin-top: 30px;
+    padding: 0 18px;
+}
+
+#centro #botones button {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 16px;
+    border: #f8f9fa solid 1px;
+    background-color: #f8f9fa;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+#centro #botones button:hover {
+    border: #dfe1e5 solid 1px;
+}
+
+.lenguaje {
+    display: flex;
+    justify-content: center;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background-color: #f2f2f2;
+    font-family: arial,sans-serif;
+}
+
+footer #pais {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+footer #about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: #dadce0 solid 1px;
+    font-size: 14px;
+}
+
+footer #about #izq {
+    display: flex;
+}
+
+footer #about #izq li {
+    padding: 15px;
+}
+
+footer #about #izq li a {
+    color: rgba(0,0,0,.54);
+}
+
+footer #about #izq li a:hover {
+    text-decoration: underline;
+}
+
+footer #about #der {
+    display: flex;
+}
+
+footer #about #der li {
+    padding: 15px;
+    color: rgba(0,0,0,.54); 
+}
+
+footer #about #der li a {
+    color: rgba(0,0,0,.54);
+}
+
+footer #about #der li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 856px) {
+    footer #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    #nav {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        position: relative;
+    }
+
+    #nav svg {
+        margin: 0 7px;
+    }
+
+    #nav form input {
+        width: 89%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    footer #about ul {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-height: 457px) {
+    body {
+        display: flex;
+    }
+    
+    footer {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+}
